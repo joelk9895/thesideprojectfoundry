@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --blue-primary: #0000ff; /* Updated to a more vibrant blue */
+  --blue-secondary: #3333ff;
+  --blue-accent: #6666ff;
+  --text-primary: #ffffff;
+  --text-secondary: #f0f0f0;
+  --accent-color: #00ccff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-plus-jakarta-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-blue-primary: var(--blue-primary);
+}
+
+.dark {
+  --background: var(--blue-primary);
+  --foreground: var(--text-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--blue-primary);
+    --foreground: var(--text-primary);
+  }
+}
+
+body {
+  background: white;
+  color: black;
+  font-family: var(--font-sans, sans-serif);
+  overflow-x: hidden;
+}
+
+.cursor {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  border: 1px solid var(--accent-color);
+  background-color: transparent;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 999;
+  transition: all 0.1s ease;
+}
+
+.cursor.active {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 204, 255, 0.1);
+  border: 1px solid var(--accent-color);
+}
+
+.cursor-follower {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--accent-color);
+  border-radius: 100%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 998;
+  opacity: 0.5;
+  transition: 0.1s ease;
+}

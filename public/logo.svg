@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320" height="80" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Waves Symbol -->
+  <g fill="#FFFFFF">
+    <path d="M20,20 C30,12 40,28 50,20 C60,12 70,28 80,20 L80,28 C70,36 60,20 50,28 C40,36 30,20 20,28 L20,20 Z" />
+    <path d="M20,36 C30,28 40,44 50,36 C60,28 70,44 80,36 L80,44 C70,52 60,36 50,44 C40,52 30,36 20,44 L20,36 Z" />
+    <path d="M20,52 C30,44 40,60 50,52 C60,44 70,60 80,52 L80,60 C70,68 60,52 50,60 C40,68 30,52 20,60 L20,52 Z" />
+  </g>
+  
+  <!-- Text -->
+  <g fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif">
+    <text x="100" y="30" font-size="20" font-weight="600">the side project</text>
+    <text x="100" y="60" font-size="30" font-weight="800">foundry.</text>
+  </g>
+</svg>
